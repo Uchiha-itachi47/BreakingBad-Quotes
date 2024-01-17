@@ -1,19 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Breaking Bad Quotes</title>
-</head>
-
-<body>
-
+<%- include("partials/header.ejs")%>
     <form action="/">
-        <h4>Quote:</h4>
-        <p><%= Dialog%></p>
-
-        <h4>Author:</h4>
-        <p><%= Character%></p>
+            <div class="card">
+              <img class="mt-5 mb-3"  width="350" height="300" src="/images/<%=Character%>.jpg"/>
+              <h1 class="h1Style"><%= Character%></h1>
+              <div>
+                <p class="pStyle">
+                    <%= Dialog%>
+                </p>
+              </div>  
+            </div>
     </form>
-</body>
-</html>
+<%- include("partials/footer.ejs")%>

@@ -1,0 +1,41 @@
+body {
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid whitesmoke;
+    margin-top: 50px;
+    padding: 20px;
+    animation: fadeIn 5s;
+    border-radius: 10%;
+    backdrop-filter: blur(5px);
+}
+
+.card img {
+    border-radius: 10%;
+}
+.h1Style {
+    font-family: 'Jockey One', sans-serif;
+    margin: 10px 0px;
+}
+
+.pStyle {
+    font-family: 'Oswald', sans-serif;
+    font-size: medium;
+    margin: 0;
+    max-width: 300px;
+}
+
+.foot {
+    font-family: 'Jockey One', sans-serif;
+    text-align: center;
+    margin-top: 30px;
+}

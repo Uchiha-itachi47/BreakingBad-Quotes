@@ -4,7 +4,7 @@ import bodyParser from "body-parser";
 
 const app = express();
 const port = 3000;
-const API_URL = "https://api.breakingbadquotes.xyz/v1";
+const API_URL = "https://api.breakingbadquotes.xyz/v1/quotes";
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -14,7 +14,7 @@ let charecter
 
 app.get("/", async(req, res) =>{
     try{
-        const response = await axios.get(API_URL+"/quotes");
+        const response = await axios.get(API_URL);
         const result = response.data;
         dialog = result[0].quote;
         charecter = result[0].author;
